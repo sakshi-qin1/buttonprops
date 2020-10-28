@@ -1,0 +1,184 @@
+:root {
+  --primary: #4628ff;
+  --warning: #ffd028;
+  --danger: #eb3f27;
+  --success: #75fa83;
+  --white: #fdfdfd;
+  --dark: #181717;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.container-whatsapp {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container-whatsapp img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.container-automated {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin-right: auto;
+ 
+}
+.container-automated img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.container-serve {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+
+}
+.container-serve img {
+  max-width: 100%;
+  height: auto;
+ 
+  
+}
+
+.container-welcome {
+  float: left;
+  position: relative;
+  width: 50%;
+  margin-right: auto;
+}
+
+.container-welcome img {
+  max-width: 100%;
+  height: auto;
+ 
+  
+}
+
+
+
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: tranform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 15px 20px rgba(53, 163, 119, 0.4);
+}
+
+/*Button Clours and Styles */
+
+.btn--medium {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 15px 30px;
+  font-size: 20px;
+  border-width: 2px;
+}
+
+.btn--danger--solid {
+  border-radius: 20px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+  outline:none;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 25px;
+  padding: 5px;
+  width:100%;
+  max-width:220px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  position:absolute;
+  top:69%;
+  left:35%;
+  font-weight: 700;
+  display:block;
+}
+
+@media (max-width: 992px) { 
+  .btn--danger--solid{
+    max-width: 25%;
+    top:60%;
+    left:35%;
+    height:5px;
+    overflow: visible;
+    font-size: 4px;
+    
+  }
+
+  .btn--danger--solid span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .btn--danger--solid span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .btn--danger--solid:hover span {
+    padding-right: 25px;
+  }
+  .btn--danger--solid:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+/* Decrease div size to fit all four divs onto one line as the screen gets bigger */
+@media (max-width: 50px) { 
+  .btn--danger--solid {
+    max-width: 25%;
+    font-size: 10px;
+  }
+}
+.btn--danger--solid span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.btn--danger--solid span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn--danger--solid:hover span {
+  padding-right: 25px;
+}
+.btn--danger--solid:hover span:after {
+  opacity: 1;
+  right: 0;
+}
